@@ -16,11 +16,13 @@ use Slim\Http\Response;
 //});
 require_once '../vendor/autoload.php';
 
-
+$testerObj = new \MyApp\Classes\Class_Tester;
+//var_dump($testerObj);
+//die();
 //echo $twig->render('twig.html', array('name' => 'Fabien'));
 
 $app->get('/home', function($request, $response) {
-    return $this->renderer->render($response,'views/home.twig');
+    return $this->renderer->render($response, 'views/home.twig');
 //    $loader = new Twig_Loader_Filesystem(__DIR__ . '/../templates/views');
 //    $twig = new Twig_Environment($loader, array(
 //        'cache' => false,

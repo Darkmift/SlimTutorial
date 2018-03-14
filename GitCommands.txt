@@ -41,3 +41,7 @@ Install Twig:
 1.)
  
 composer.phar require "twig/twig:^2.0"
+
+
+after setting composer.json with("autoload":{"psr-4":{"MyApp\\":"src/Classes"}},)
+composer dump-autoload -o
